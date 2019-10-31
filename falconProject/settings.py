@@ -76,8 +76,14 @@ WSGI_APPLICATION = 'falconProject.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        #'ENGINE': 'django.db.backends.sqlite3',
+        #'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'HOST': 'localhost', #HOST NAME
+        'NAME': 'FIPSApp', #DB NAME
+        'USER': 'root', #NAME OF USER IN DB
+        'PASSWORD': 'josemari3', # DATABASE PASSWORD
+        'PORT': '3306' #DB PORT NUMBER
     }
 }
 
