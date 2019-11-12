@@ -1,0 +1,57 @@
+h1 a, h2 a{
+    color: #e32319;
+    font-family: 'Source Code Pro', monospace;
+
+}
+body{
+    background-color: #0a0a0a;
+    padding-left: 80px;
+}
+
+.page-header{
+    text-align: center;
+    background-color:#c2a3a1;
+    margin-top: 0;
+    padding: 20px 20px 20px 40px;
+}
+
+.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active{
+    color:#bd153c;
+    font-size: 36pt;
+    text-decoration: none;
+}
+
+.content{
+    margin-left: 40px;
+}
+
+h1, h2, h3, h4{
+    font-family: 'Sunshiney', cursive ;
+}
+
+.date{
+    color:#bd153c;
+}
+
+.save{
+    float: right;
+}
+
+.post-form textarea, .post-form input{
+    width: 100;
+}
+
+.top-menu, .top-menu:hover, .top-menu:visited{
+    color: #a1c2a4;
+    float:right;
+    font: size 26pt;
+    margin-right: 20px;
+}
+
+.post{margin-bottom: 70px;
+     color: #0a0a0a;
+}
+
+.post h2 a, .post h2 a:visited{
+    color:#bd153c;
+}

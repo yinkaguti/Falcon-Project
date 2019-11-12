@@ -1,0 +1,43 @@
+{% load static %}
+
+<html>
+
+   <head>
+        <title>FIPS</title>
+        <meta charset="utf-8">
+        <meta name="view port" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'css/FIPSApp.css'%}"> 
+        
+         </head>
+         <body>
+                
+             <div class="page-header">
+                 <h1><a href="/"> Welcome to FIPS</a></h1>
+             </div>
+             
+             <div class="content container">
+                    
+                    <img src= "{%static 'img/justice.jpg'%}">
+                 <div class="row">
+                     <div class= "col-md-8">
+                     {% block content %}
+                     {% for post in posts %}
+
+             <div class="post">
+                 
+                 <div class="date"><p>published: {{post.published_date}} </p></div>
+                 <h2><a href="">{{post.title}}</a></h2>
+                 <div class="text"><p>{{post.text|linebreaksbr}}</p></div>
+             </div>
+             {% endfor %}
+             {% endblock %}
+            
+             </div>
+                </div>
+                    </div>
+
+         </body>
+         
+</html>
